@@ -28,6 +28,7 @@ app = Flask(__name__)
 
 @app.route("/", methods=["GET", "POST"])
 def index():
+    print("version 1.0.0")
     """
     Receives event data from a webhook, checks if the source is authorized,
     checks if the signature is verified, and then sends the data to Pub/Sub.
